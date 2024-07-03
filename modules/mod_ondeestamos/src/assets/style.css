@@ -1,0 +1,95 @@
+.ondeEstamos-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 0px;
+    padding: 30px;
+}
+.ondeEstamosInfo {
+    background: rgb(0 0 0 / 27%);
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ondeEstamosInfo-texto-item {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight:300
+}
+.texto-item-title {
+    font-weight: 500;
+}
+.ondeEstamosInfo-title h6 {
+    font-weight:500;
+    text-align:center
+}
+.ondeEstamosInfo-title {
+    margin-bottom: 20px
+}
+.ondeEstamos-div.form {
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.ondeEstamos-row {margin: 40px 0 90px 0;display: flex;}
+.ondeEstamos-row svg {
+    max-width:100%;
+    height:auto;
+}
+.ondeEstamos-div.form form {
+    width: 100%
+}
+
+.ondeEstamos-div.form select {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.div-mapa {
+    display:flex;
+    justify-content: end;
+}
+.ondeEstamos-clear {
+    background:rgb(0 0 0 / 15%);
+    border-radius:6px;
+    padding: 5px 10px;
+    cursor:pointer
+}
+.ondeEstamos-clear:hover {
+    background:rgba(0,0,0,0.3)
+}
+.ondeEstamosInfo-button {
+    display:table;
+    margin:0 auto;
+    border:1px solid #ebebeb;
+    margin-top: 20px;
+    border-radius: 60px;
+}
+.ondeEstamosInfo-button a {
+    color:#fff;
+    font-weight: 500
+}
+.ondeEstamosInfo-button a:hover {
+    background:#fff;
+    color:var(--cinza-3)
+}
+.ondeEstamosInfo-title h6 {
+    font-size: 16px
+}
+
+@media screen and (max-width: 992px){
+    .ondeEstamos-row {
+        flex-direction:column;
+        align-items:center;
+    }
+    .ondeEstamos-row svg {
+        padding-bottom: 30px
+    }
+    .ondeEstamos-row .div-mapa {
+        display:flex;
+        align-items:center;
+        justify-content:center
+    }
+}

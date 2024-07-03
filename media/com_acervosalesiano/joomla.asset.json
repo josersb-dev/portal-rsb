@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_acervosalesiano",
+  "version": "CVS: 1.0.0",
+  "license": "GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt",
+  "assets": [
+    {
+      "name": "com_acervosalesiano.admin",
+      "type": "style",
+      "uri": "com_acervosalesiano/admin.css"
+    },
+    {
+      "name": "com_acervosalesiano.admin",
+      "type": "script",
+      "uri": "com_acervosalesiano/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_acervosalesiano.menuMobile",
+      "type": "script",
+      "uri": "com_acervosalesiano/js/menuMobile.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_acervosalesiano.list",
+        "type": "style",
+        "uri": "com_acervosalesiano/list.css"
+    }
+  ]
+}

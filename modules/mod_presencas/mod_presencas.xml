@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>Presenças</name>
+	<author>Joomla! Project</author>
+	<creationDate>2005-07</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>Exibição de Presenças.</description>
+	<namespace path="src">Joomla\Module\Presencas</namespace>
+	<files>
+		<filename module="mod_presencas">mod_presencas.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<help key="Site_Modules:_Presencas_Display" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_presencas/src/Form/field">
+				<field
+					name="coTipoPresenca"
+					type="CoTipo"
+					label="Tipo de Presença"
+					multiple="true"
+					
+				/>
+
+				<field 
+					name="limit" 
+					type="number" 
+					default="1" 
+					label="Quantidade" 
+					description="" 
+					min="0" 
+					max="10" 
+					step="1" 
+				/>
+
+				<field 
+					name="cor" 
+					type="color" 
+					default="#FFFFFF" 
+					label="Cor das Setas" 
+					description=""
+					hint=""
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+		
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					multiple="true"
+					layout="joomla.form.field.list-fancy-select"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

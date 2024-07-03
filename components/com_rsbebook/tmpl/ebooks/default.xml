@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSBEBOOK_TITLE_LIST_VIEW_EBOOKS" option="View">
+        <message>
+                        <![CDATA[COM_RSBEBOOK_TITLE_LIST_VIEW_EBOOKS_DESC]]>
+        </message>
+	</layout>
+	
+</metadata>

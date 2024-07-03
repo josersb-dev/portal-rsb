@@ -1,0 +1,69 @@
+.sliderPresencas .slideInner {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    flex-direction:co
+}
+
+.sliderPresencas {
+    height: 400px;
+    display:non;
+    background: var(--cinza-8);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sliderPresencas.nossasInspetorias {
+    background-color: var(--escolas-light-3);
+    color: #fff;
+}
+.sliderPresencas.nossasInspetorias .badge-rsb {
+    background-color: var(--escolas-light-6);
+    padding: 6px 10px;
+    border-radius: 13px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.sliderPresencas span {
+    margin-bottom: 10px
+}
+.sliderPresencas span.title {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.slidePresencaImg {
+    background:#ccc;
+    height:100%;
+}
+.slidePresencaImg img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.sliderPresencaContent {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    text-align:center;
+}
+.sliderPresencaContent .btn {
+    margin-top: 20px
+}
+
+@media screen and (max-width: 767px){
+    .sliderPresencas .slidePresencaImg  {
+        display:non;
+        height: 200px;
+        width: 100%
+    }
+    .sliderPresencas  {
+        height:auto
+    }
+    .sliderPresencas .slideInner {
+        flex-direction:column
+    }
+} 

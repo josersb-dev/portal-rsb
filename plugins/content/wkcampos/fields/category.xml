@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="params">
+
+		<fieldset name="options">
+
+			<fieldset name="basic" label="COM_CATEGORIES_FIELD_BASIC_LABEL">
+
+				<field
+					name="category_layout"
+					type="componentlayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					view="category"
+					useglobal="true"
+				/>
+
+				<field
+					name="nada"
+					type="text"
+					label="Bora"
+				/>
+
+			</fieldset>
+		</fieldset>
+	</fields>
+</form>

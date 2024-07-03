@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Acervosalesiano\Component\Acervosalesiano\Administrator\Field">
+<fieldset name="lateral" >
+<field
+			name="destaque"
+			type="radio"
+			layout="joomla.form.field.radio.switcher"
+			label="Destaque"
+			description=""
+			default="0"
+			>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+    <field 
+      name="textoDestaque"
+      description="Se estiver vazio ele pega o título padrão do item"
+      type="text"
+      label="Texto do Destaque"
+      showon="destaque:1"
+    >
+    </field>
+    <field name="categoria" extension="com_acervosalesiano.items" multiple="false" layout="joomla.form.field.list-fancy-select" type="category" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_CATEGORIA" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_CATEGORIA" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_CATEGORIA"/>
+
+</fieldset>
+<fieldset name="aba1" >
+<field name="type" type="list" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TYPE" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_TYPE" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TYPE">
+      <option value="santidade">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_SANTIDADE</option>
+      <option value="download">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_DOWNLOAD</option>
+      <option value="frases">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_FRASES</option>
+    </field>
+    <field name="imagem" directory="" type="media" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_IMAGEM" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_IMAGEM" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_IMAGEM" showon="type:santidade,frases"/>
+    <field name="arquivo" directory="" types="documents" type="media" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_ARQUIVO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_ARQUIVO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_ARQUIVO" showon="type:download"/>
+    <field name="data_nascimento" type="calendar"  class="inputbox" filter="safehtml" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_NASCIMENTO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_DATA_NASCIMENTO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_NASCIMENTO" showon="type:santidade"/>
+</fieldset>
+<fieldset name="aba2" >
+<!--field name="downloads" type="downloads">
+</field-->
+<field name="data_beatificacao" type="calendar"  class="inputbox" filter="safehtml" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_BEATIFICACAO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_DATA_BEATIFICACAO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_BEATIFICACAO" showon="type:santidade"/>
+    <field name="data_canonizacao" type="calendar"  class="inputbox" filter="safehtml" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_CANONIZACAO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_DATA_CANONIZACAO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_CANONIZACAO" showon="type:santidade"/>
+    <field name="data_celebracao" type="calendar"  class="inputbox" filter="safehtml" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_CELEBRACAO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_DATA_CELEBRACAO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_DATA_CELEBRACAO" showon="type:santidade"/>
+    <field name="etapa_canonizacao" multiple="true" layout="joomla.form.field.list-fancy-select" type="list" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_ETAPA_CANONIZACAO" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_ETAPA_CANONIZACAO" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_ETAPA_CANONIZACAO" showon="type:santidade">
+      <option value="Canonizadoa">COM_ACERVOSALESIANO_ITEMS_ETAPA_CANONIZACAO_OPTION_CANONIZADOA</option>
+      <option value="Beatificadoa">COM_ACERVOSALESIANO_ITEMS_ETAPA_CANONIZACAO_OPTION_BEATIFICADOA</option>
+      <option value="Veneravel">COM_ACERVOSALESIANO_ITEMS_ETAPA_CANONIZACAO_OPTION_VENERAVEL</option>
+    </field>
+</fieldset>
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" hidden="true" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" description="JGLOBAL_FIELD_MODIFIED_BY_DESC" hidden="true" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_MODIFIED_BY"/>
+    <field name="title" filter="safehtml" type="text" required="true" message="Título é obrigatório" label="JGLOBAL_TITLE"  hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TITLE"/>
+    
+    <field name="alias" type="text" class="inputbox" generator="title"  label="JFIELD_ALIAS_LABEL" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_ALIAS"/>
+    
+    <field name="descricao" type="editor" label="Descrição" filter="raw"></field>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+</form>

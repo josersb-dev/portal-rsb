@@ -1,0 +1,203 @@
+.card-container {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 82px 58px 28px 58px
+}
+
+.card-item {
+    position: relative;
+    padding: 0 30px!important
+}
+.rsb-videos .owl-dots {
+    margin: 0 auto;
+    display:table;
+    margin-top: 15px;
+}
+.card-container .icone {
+    width: 72.5px;
+    height: 71.68px;
+    border-radius: 50px;
+    position: absolute;
+    top: -120px;
+    left: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--social-light-6)
+}
+
+.card-item h6 {
+    text-transform: uppercase
+}
+
+.nav-card {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 50px;
+    background-color: var(--escolas-light-9);
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+}
+
+.nav-card .div-texto {
+    padding-right: 20px;
+}
+.p-body {
+    display:non
+}
+.nav-card .icone {
+    width: 72.5px;
+    height: 71.68px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-bottom: 24.32px
+}
+
+.nav-card .icone .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#nav-card-scroll .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: var(--bg-navbar-sistemas);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px
+}
+
+#nav-card-scroll .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--btn-azul)
+}
+
+.div-video {
+    position: relative;
+}
+
+
+.bg-video:hover {
+    background-color: #00000088
+}
+
+.bg-video:hover .btn-play {
+    background-color: #ff2f18cb;
+}
+
+.player-video {
+    width: 728px;
+    height: 536px;
+    border-radius: 10px;
+    position: absolute
+}
+
+.btn-play {
+    width: 14vh;
+    height: 14vh;
+    border-radius: 100%;
+    background-color: rgb(49 113 192 / 80%);
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 0.3s
+}
+
+.btn-play .icon {
+    position: relative;
+    cursor: pointer;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa-video {
+    width: calc(100% + 70px);
+    height: calc(100% + 70px);
+    border-radius: 10px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+}
+
+.capa-video img {
+    width: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 380px;
+    background: rgb(228, 228, 228);
+}
+.capa-video:hover .btn-play {
+    background: rgb(230 43 52 / 66%);
+}
+
+.tab-content {
+    margin-top: 50px
+}
+
+.navtab-cards {
+    justify-content: center
+}
+
+.navtab-cards .nav-link {
+    padding: 0!important;
+    margin: 0 11px
+}
+
+@media screen and (max-width: 992px){
+    .capa-video {
+        width: auto;
+        margin: 30px 0;
+    }
+    .nav-card .div-texto {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center
+    }
+}
+
+@media screen and (max-width: 557px){
+    .capa-video img {
+        height: 300px
+    }
+    .nav-card {
+        padding: 30px 10px;
+        height: 100%;
+    }
+    .capa-video {
+        margin: 
+    }
+    .rsb-videos .owl-stage {
+        display:flex;
+    }
+    .rsb-videos .owl-stage .row {
+        flex-direction:column;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content:center;
+        align-items:center;
+    }
+    .div-video {
+        order:1;
+        margin-top: auto
+    }
+    .rsb-videos h4 {
+        text-align:center;
+    }
+    .rsb-videos .btn-play {
+        width: 10vh;
+        height: 10vh
+    }
+}

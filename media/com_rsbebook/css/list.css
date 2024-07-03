@@ -1,0 +1,17 @@
+/**
+ * @version     CVS: 1.0.0
+ * @package     com_rsbebook
+ * @copyright   2024 José Carlos Ferreira
+ * @license     GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt
+ * @author      José Carlos Ferreira <jcarloswk@gmail.com>
+ */
+
+ .modal-backdrop {
+    z-index: 9999 !important
+    }
+   .modal {
+    z-index: 99991 !important;
+   }
+   .view-ebooks .js-stools {
+      display:none
+   }

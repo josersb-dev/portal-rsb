@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="meuaba" label="Topo Padrão Segmentos" type="params">
+        <fieldset name="padraopai" label="Padrão Segmentos Principal" description="Está configuração se aplica apenas ao item de menu. Os itens de submenu herda a configuração automaticamente.">
+            
+            <fields name="params" label="Header Notícias" type="fieldset">
+                <field name="toposegmento" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Segmentos">
+                    <option value="0">Ocultar</option>
+                    <option value="1">Exibir</option>
+                </field>
+                <field name="imagemrsb" type="media" directory="images" label="Imagem para título" />
+                <field name="rsb-padrao-background" type="text" label="Classe da Cor" description="Classes que usamos: bg-escolas, bg-es, bg-social, bg-comunicacao, bg-pastoral, bg-acervo, bg-acssa" />
+            </fields>
+        </fieldset>
+    </fieldset>
+
+    <fieldset name="opcoesdapagina" label="Topo Padrão Banner" type="params">
+        <fieldset name="menuitem" label="Opções da Página" class="col-6">
+            <fields name="params" label="Header Notícias" type="fieldset">
+            <field name="topopadrao" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Topo Padrão">
+                    <option value="0">Ocultar</option>
+                    <option value="1">Exibir</option>
+                </field>
+                <field 
+                    name="customjs" 
+                    type="textarea" 
+                    default="" 
+                    label="JS Personalizado" 
+                    description="" 
+                    rows="10" 
+                    cols="5" 
+                    filter="raw"
+                />
+                <field name="imagemTopoPadrao" type="media" directory="images" label="Imagem para título" />
+                <field name="tituloTopoPadrao" type="textarea" default="" label="Título do Banner" description="" rows="10" cols="5" filter="raw" />
+            </fields>
+        </fieldset>
+    </fieldset>
+
+    <fieldset name="paginatitulo" label="Título Padrão" type="params">
+        <fieldset name="padraoicone" label="Ícone">
+            
+            <fields name="params" label="Header Notícias" type="fieldset">
+                <field 
+                    name="icone" 
+                    type="textarea" 
+                    default="" 
+                    label="Ícone" 
+                    description="" 
+                    rows="10" 
+                    cols="5" 
+                    filter="raw"
+                />
+                <field name="iconebackground" type="text" default="" label="Cor de Fundo" description="Classe da cor" />
+            </fields>
+        </fieldset>
+
+        <fieldset name="padraotitulo" label="Título">
+            
+            <fields name="params" label="Header Notícias" type="fieldset">
+                <field 
+                    name="rsbpaginatitulo" 
+                    type="text" 
+                    default="" 
+                    label="Título" 
+                    description="" 
+                />
+                <field 
+                    name="rsbpaginasubtitulo" 
+                    type="text" 
+                    default="" 
+                    label="Sub Título" 
+                    description="" 
+                />
+                
+                <field name="estilo" default="padrao" type="list" label="Estilo">
+                    <option value="padrao">Padrão</option>
+                    <option value="ebook">Ebook</option>
+                </field>
+            </fields>
+        </fieldset>
+
+            <fieldset name="padraonavegacaocategory" label="Navegação de Categorias" description="Navegação de categoria: Será categorias que são irmãos da categoira desse item.">
+                <fields name="params" label="Navegação de Categorias">
+                     <field name="navegacaoCategory" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Navegação de Categorias">
+                        <option value="0">Ocultar</option>
+                        <option value="1">Exibir</option>
+                    </field>
+                    
+                    <field name="itemsDoParent" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Items do Parent" description="Se estiver marcado com não ele pega os irmãos.">
+                        <option value="0">Ocultar</option>
+                        <option value="1">Exibir</option>
+                    </field>
+
+                    <field name="desativarHeranca" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Desativar Herança" description="Desativa os padrões do menú pais de segmentos">
+                        <option value="0">Não</option>
+                        <option value="1">Sim</option>
+                    </field>
+
+                    <field name="navegacaoCategoryComponente" type="text" label="Componente" hint="Ex: com_content" showon="itemsDoParent:0" />
+                    <field name="navegacaoCategoryCampo" type="text" label="Campo da categoria" hint="Ex: catid" showon="itemsDoParent:0" />
+                    
+                </fields>
+            </fieldset>
+
+        <fieldset name="padraopesquisar" label="Pesquisar">
+            <fields name="params" label="Pesquisar" type="fieldset">
+                <field name="pesquisar" default="0" type="radio" layout="joomla.form.field.radio.switcher" label="Pesquisar">
+                    <option value="0">Ocultar</option>
+                    <option value="1">Exibir</option>
+                </field>
+                <field 
+                    name="pesquisar-action" 
+                    type="text" 
+                    default=""
+                    showon="pesquisar:1"
+                    label="Ação do Form" 
+                    description="Vázio (padrão)" 
+                />
+
+                <field 
+                    name="pesquisar-name" 
+                    type="text" 
+                    default=""
+                    showon="pesquisar:1"
+                    label="Name do Form" 
+                    description="Vázio (padrão)" 
+                />
+
+                <field name="pesquisar-method" showon="pesquisar:1" default="0" type="list" label="Pesquisar Method">
+                    <option value="get">Get</option>
+                    <option value="post">Post</option>
+                </field>
+
+            </fields>
+
+        </fieldset>
+
+    </fieldset>
+</form>

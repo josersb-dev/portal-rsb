@@ -1,0 +1,15 @@
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+    <name>Campos Menu</name>
+    <version>1.0.0</version>
+    <description>Novos campos para o menu</description>
+    <files>
+        <filename plugin="wkcampos">wkcampos.php</filename>
+    </files>
+    <events>
+        <event type="onContentPrepareForm" name="onContentPrepareForm">
+            <filename>wkcampos.php</filename>
+            <classname>PlgContentMyPlugin</classname>
+            <method>onContentPrepareForm</method>
+        </event>
+    </events>
+</extension>

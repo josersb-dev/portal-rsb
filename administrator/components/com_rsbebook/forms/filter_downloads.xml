@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" description="COM_RSBEBOOK_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_RSBEBOOK_FILTER_STATE"
+               description="COM_RSBEBOOK_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+        <field name="termo_licenca_uso" label="COM_RSBEBOOK_FORM_LBL_DOWNLOAD_TERMO_LICENCA_USO" type="list" onchange="this.form.submit();" default="COM_RSBEBOOK_DOWNLOADS_TERMO_LICENCA_USO_FILTER">
+  <option value="">COM_RSBEBOOK_DOWNLOADS_TERMO_LICENCA_USO_FILTER</option>
+  <option value="0">COM_RSBEBOOK_DOWNLOADS_TERMO_LICENCA_USO_OPTION_OFF</option>
+  <option value="1">COM_RSBEBOOK_DOWNLOADS_TERMO_LICENCA_USO_OPTION_ON</option>
+</field>
+<field name="termo_consentimento_uso" label="COM_RSBEBOOK_FORM_LBL_DOWNLOAD_TERMO_CONSENTIMENTO_USO" type="list" onchange="this.form.submit();" default="COM_RSBEBOOK_DOWNLOADS_TERMO_CONSENTIMENTO_USO_FILTER">
+  <option value="">COM_RSBEBOOK_DOWNLOADS_TERMO_CONSENTIMENTO_USO_FILTER</option>
+  <option value="0">COM_RSBEBOOK_DOWNLOADS_TERMO_CONSENTIMENTO_USO_OPTION_OFF</option>
+  <option value="1">COM_RSBEBOOK_DOWNLOADS_TERMO_CONSENTIMENTO_USO_OPTION_ON</option>
+</field>
+
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_RSBEBOOK_LIST_FULL_ORDERING"
+               description="COM_RSBEBOOK_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.id ASC">COM_RSBEBOOK_ID_ASC</option><option value="a.id DESC">COM_RSBEBOOK_ID_DESC</option><option value="a.state ASC">COM_RSBEBOOK_STATE_ASC</option><option value="a.state DESC">COM_RSBEBOOK_STATE_DESC</option><option value="a.ordering ASC">COM_RSBEBOOK_ORDERING_ASC</option><option value="a.ordering DESC">COM_RSBEBOOK_ORDERING_DESC</option><option value="a.nome ASC">COM_RSBEBOOK_NOME_ASC</option><option value="a.nome DESC">COM_RSBEBOOK_NOME_DESC</option><option value="a.email ASC">COM_RSBEBOOK_EMAIL_ASC</option><option value="a.email DESC">COM_RSBEBOOK_EMAIL_DESC</option><option value="a.ebook_id ASC">COM_RSBEBOOK_EBOOK_ID_ASC</option><option value="a.ebook_id DESC">COM_RSBEBOOK_EBOOK_ID_DESC</option><option value="a.termo_licenca_uso ASC">COM_RSBEBOOK_TERMO_LICENCA_USO_ASC</option><option value="a.termo_licenca_uso DESC">COM_RSBEBOOK_TERMO_LICENCA_USO_DESC</option><option value="a.termo_consentimento_uso ASC">COM_RSBEBOOK_TERMO_CONSENTIMENTO_USO_ASC</option><option value="a.termo_consentimento_uso DESC">COM_RSBEBOOK_TERMO_CONSENTIMENTO_USO_DESC</option><option value="a.data ASC">COM_RSBEBOOK_DATA_ASC</option><option value="a.data DESC">COM_RSBEBOOK_DATA_DESC</option>
+
+        </field>
+
+       <field name="limit"
+               type="limitbox"
+               label="COM_RSBEBOOK_LIST_LIMIT"
+               description="COM_RSBEBOOK_LIST_LIMIT_DESC"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

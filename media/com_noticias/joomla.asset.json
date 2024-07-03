@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_noticias",
+  "version": "CVS: 1.0.0",
+  "license": "GNU General Public License version 2 or later; see LICENSE.txt",
+  "assets": [
+    {
+      "name": "com_noticias.admin",
+      "type": "style",
+      "uri": "com_noticias/admin.css"
+    },
+    {
+      "name": "com_noticias.admin",
+      "type": "script",
+      "uri": "com_noticias/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_noticias.list",
+        "type": "style",
+        "uri": "com_noticias/list.css"
+    }
+  ]
+}

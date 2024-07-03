@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_rsbebook",
+  "version": "CVS: 1.0.0",
+  "license": "GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt",
+  "assets": [
+    {
+      "name": "com_rsbebook.admin",
+      "type": "style",
+      "uri": "com_rsbebook/admin.css"
+    },
+    {
+      "name": "com_rsbebook.admin",
+      "type": "script",
+      "uri": "com_rsbebook/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_rsbebook.list",
+        "type": "style",
+        "uri": "com_rsbebook/list.css"
+    },
+    {
+      "name": "com_rsbebook.ebook",
+      "type": "style",
+      "uri": "com_rsbebook/list.css",
+      "dependencies": [
+        "jquery"
+      ]
+  }
+  ]
+}

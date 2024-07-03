@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Rsbnoticias\Component\Noticias\Administrator\Field">
+  <fieldset>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
+    <field name="state" default="1" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1">
+      <option value="1">JPUBLISHED</option>
+      <option value="0">JUNPUBLISHED</option>
+      <option value="2">JARCHIVED</option>
+      <option value="-2">JTRASHED</option>
+    </field>
+    <field name="ordering"/>
+    <field name="checked_out" type="hidden" filter="unset"/>
+    <field name="checked_out_time" type="hidden" filter="unset"/>
+    <field name="created_by" type="createdby" default="0" label="JGLOBAL_FIELD_CREATED_BY_LABEL" description="JGLOBAL_FIELD_CREATED_BY_DESC" hidden="true" hint="COM_NOTICIAS_FORM_LBL_ITEM_CREATED_BY"/>
+    <field name="modified_by" type="modifiedby" default="0" label="JGLOBAL_FIELD_MODIFIED_BY_LABEL" description="JGLOBAL_FIELD_MODIFIED_BY_DESC" hidden="true" hint="COM_NOTICIAS_FORM_LBL_ITEM_MODIFIED_BY"/>
+    <field name="destaque" default="1" type="radio" label="COM_NOTICIAS_FORM_LBL_ITEM_DESTAQUE" description="COM_NOTICIAS_FORM_DESC_ITEM_DESTAQUE" hint="COM_NOTICIAS_FORM_LBL_ITEM_DESTAQUE">
+      <option value="0">COM_NOTICIAS_ITEMS_DESTAQUE_OPTION_0</option>
+      <option value="1">COM_NOTICIAS_ITEMS_DESTAQUE_OPTION_1</option>
+    </field>
+    <field name="data" type="timecreated" label="COM_NOTICIAS_FORM_LBL_ITEM_DATA" description="COM_NOTICIAS_FORM_DESC_ITEM_DATA" hint="COM_NOTICIAS_FORM_LBL_ITEM_DATA"/>
+    <field name="imagem" directory="" type="media" required="true" message="Imagem de introdução obrigatória" label="COM_NOTICIAS_FORM_LBL_ITEM_IMAGEM" description="COM_NOTICIAS_FORM_DESC_ITEM_IMAGEM" hint="COM_NOTICIAS_FORM_LBL_ITEM_IMAGEM"/>
+    <field name="legenda" filter="safehtml" type="text" label="COM_NOTICIAS_FORM_LBL_ITEM_LEGENDA" description="COM_NOTICIAS_FORM_DESC_ITEM_LEGENDA" hint="COM_NOTICIAS_FORM_LBL_ITEM_LEGENDA"/>
+    <field name="slug" type="text" class="inputbox" generator="titulo" required="true" message="Já existe um item com esse mesmo apelido." label="COM_NOTICIAS_FORM_LBL_ITEM_SLUG" description="COM_NOTICIAS_FORM_DESC_ITEM_SLUG" hint="COM_NOTICIAS_FORM_LBL_ITEM_SLUG"/>
+    <field name="resumo" filter="safehtml" type="textarea" label="COM_NOTICIAS_FORM_LBL_ITEM_RESUMO" description="COM_NOTICIAS_FORM_DESC_ITEM_RESUMO" hint="COM_NOTICIAS_FORM_LBL_ITEM_RESUMO"/>
+    <field name="texto" editor="|" buttons="true" filter="JComponentHelper::filterText" type="editor" label="COM_NOTICIAS_FORM_LBL_ITEM_TEXTO" description="COM_NOTICIAS_FORM_DESC_ITEM_TEXTO" hint="COM_NOTICIAS_FORM_LBL_ITEM_TEXTO"/>
+    <field name="id_segmento" extension="com_noticias.items" type="category" label="COM_NOTICIAS_FORM_LBL_ITEM_ID_SEGMENTO" description="COM_NOTICIAS_FORM_DESC_ITEM_ID_SEGMENTO" hint="COM_NOTICIAS_FORM_LBL_ITEM_ID_SEGMENTO"/>
+    <field name="publicar_em" type="calendar" class="inputbox" format="%Y-%m-%d %H:%M:%S" showtime="true" translateformat="true" label="COM_NOTICIAS_FORM_LBL_ITEM_PUBLICAR_EM" description="COM_NOTICIAS_FORM_DESC_ITEM_PUBLICAR_EM" hint="COM_NOTICIAS_FORM_LBL_ITEM_PUBLICAR_EM"/>
+    <field name="titulo" filter="safehtml" type="text" label="COM_NOTICIAS_FORM_LBL_ITEM_TITULO" description="COM_NOTICIAS_FORM_DESC_ITEM_TITULO" hint="COM_NOTICIAS_FORM_LBL_ITEM_TITULO"/>
+    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+  </fieldset>
+  <fieldset name="accesscontrol">
+    <field name="asset_id" type="hidden" filter="unset"/>
+    <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_noticias" section="item"/>
+  </fieldset>
+</form>

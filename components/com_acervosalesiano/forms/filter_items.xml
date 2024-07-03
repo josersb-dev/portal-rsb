@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_ACERVOSALESIANO_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="type" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TYPE" type="list" onchange="this.form.submit();" default="COM_ACERVOSALESIANO_ITEMS_TYPE_FILTER">
+  <option value="">COM_ACERVOSALESIANO_ITEMS_TYPE_FILTER</option>
+  <option value="santidade">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_SANTIDADE</option>
+  <option value="download">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_DOWNLOAD</option>
+  <option value="frases">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_FRASES</option>
+</field>
+<field name="categoria" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_CATEGORIA" type="category" extension="com_acervosalesiano.items" onchange="this.form.submit();" default="">
+  <option value=""/>
+  <option value="">JOPTION_SELECT_CATEGORY</option>
+</field>
+
+
+    </fields>
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_ACERVOSALESIANO_LIST_FULL_ORDERING"
+               description="COM_ACERVOSALESIANO_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.id ASC">COM_ACERVOSALESIANO_ID_ASC</option><option value="a.id DESC">COM_ACERVOSALESIANO_ID_DESC</option><option value="a.state ASC">COM_ACERVOSALESIANO_STATE_ASC</option><option value="a.state DESC">COM_ACERVOSALESIANO_STATE_DESC</option><option value="a.ordering ASC">COM_ACERVOSALESIANO_ORDERING_ASC</option><option value="a.ordering DESC">COM_ACERVOSALESIANO_ORDERING_DESC</option><option value="a.title ASC">COM_ACERVOSALESIANO_TITLE_ASC</option><option value="a.title DESC">COM_ACERVOSALESIANO_TITLE_DESC</option><option value="a.type ASC">COM_ACERVOSALESIANO_TYPE_ASC</option><option value="a.type DESC">COM_ACERVOSALESIANO_TYPE_DESC</option><option value="a.categoria ASC">COM_ACERVOSALESIANO_CATEGORIA_ASC</option><option value="a.categoria DESC">COM_ACERVOSALESIANO_CATEGORIA_DESC</option><option value="a.alias ASC">COM_ACERVOSALESIANO_ALIAS_ASC</option><option value="a.alias DESC">COM_ACERVOSALESIANO_ALIAS_DESC</option>
+
+        </field>
+
+       <field name="limit"
+               type="limitbox"
+               label="COM_ACERVOSALESIANO_LIST_LIMIT"
+               description="COM_ACERVOSALESIANO_LIST_LIMIT_DESC"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+</form>

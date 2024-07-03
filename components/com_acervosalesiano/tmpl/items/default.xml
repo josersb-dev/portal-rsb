@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ACERVOSALESIANO_TITLE_LIST_VIEW_ITEMS" option="View">
+        <message>
+                        <![CDATA[COM_ACERVOSALESIANO_TITLE_LIST_VIEW_ITEMS_DESC]]>
+        </message>
+	</layout>
+	
+			<fields name="request">
+				<fieldset name="request"
+					addfieldpath="/administrator/components/com_categories/models/fields"
+				>
+					<field
+						name="catid"
+						type="category"
+						label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+						description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+						extension="com_acervosalesiano.items"
+						show_root="true"
+						published="1"
+					/>
+					
+				</fieldset>
+			</fields>
+
+			<fields name="params">
+				<fieldset name="params" label="Opções do acervo">
+					<field name="tipo" type="list" label="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TYPE" description="COM_ACERVOSALESIANO_FORM_DESC_ITEM_TYPE" hint="COM_ACERVOSALESIANO_FORM_LBL_ITEM_TYPE" show_root="false" published="1">
+						<option value="santidade">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_SANTIDADE</option>
+						<option value="download">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_DOWNLOAD</option>
+						<option value="frases">COM_ACERVOSALESIANO_ITEMS_TYPE_OPTION_FRASES</option>
+    				</field>
+
+					<field name="tratamento" type="list" label="Tratamento" description="" show_root="false">
+						<option value="">Default</option>
+						<option value="Beato">Beato</option>
+						<option value="Santo">Santo</option>
+						<option value="Venerável">Venerável</option>
+    				</field>
+				</fieldset>
+			</fields>
+</metadata>

@@ -1,0 +1,147 @@
+.rsb-segmentos {
+    display: flex;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 50px 0
+}
+.rsb-segmentos .owl-nav {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.rsb-segmentos-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.rsb-segmentos-item svg {
+    height: 100%
+}
+
+.rsb-segmentos-item-imagem {
+    max-height: 100%!important;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255 255 255 / 60%);
+    background-blend-mode: overlay;
+    transition: .3s;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+    text-decoration:none
+}
+
+.rsb-segmentos-item-imagem-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    transition: .3s
+}
+
+.rsb-segmentos-item-imagem-icon {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s
+}
+
+.rsb-segmentos-escolas .rsb-segmentos-item-imagem-icon {
+    left: 0
+}
+
+.rsb-segmentos-item-imagem:hover .rsb-segmentos-item-imagem-icon {
+    opacity: 1
+}
+
+.rsb-segmentos-item-imagem h3 {
+    position: relative;
+    z-index: 9;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 48px;
+    letter-spacing: -.5px;
+    font-weight: 700;
+}
+
+.rsb-segmentos-item-imagem:hover,.rsb-segmentos-item-imagem:hover .rsb-segmentos-item-imagem-overlay {
+    opacity: 1;
+    background-color: transparent
+}
+
+.rsb-segmentos-item-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 30px;
+    margin: 0 40px;
+    color: var(--cinza-4);
+    border-bottom: 4px solid;
+    text-align: center
+}
+
+.rsb-segmentos-item-numeros-title {
+    font-size: 20px
+}
+
+.rsb-segmentos .owl-prev svg {
+    transform: rotate(0)!important;
+    transform: scaleX(-1)!important
+}
+
+.rsb-segmentos .owl-nav button {
+    background: 0 0!important
+}
+
+.rsb-segmentos-escolas .rsb-segmentos-item-numeros {
+    border-color: var(--btn-azul)
+}
+
+.rsb-segmentos-ensino-superior .rsb-segmentos-item-numeros {
+    border-color: var(--es-principal)
+}
+
+.rsb-segmentos-social .rsb-segmentos-item-numeros {
+    border-color: var(--social-principal)
+}
+
+.rsb-segmentos-comunicacao .rsb-segmentos-item-numeros {
+    border-color: var(--comunicacao-principal)
+}
+
+.rsb-segmentos .owl-stage {
+    display: flex;
+    flex-flow: wrap
+}
+
+@media screen and (max-width: 1300px) {
+    .rsb-segmentos-item-imagem h3 {
+        font-size:36px!important
+    }
+
+    .rsb-segmentos-item-imagem:hover .rsb-segmentos-item-imagem-icon {
+        opacity: 0
+    }
+
+    .rsb-segmentos-item-imagem {
+        height: 400px
+    }
+
+    .rsb-segmentos-item-numeros-title {
+        font-size: 12px
+    }
+
+    .rsb-segmentos-item-numeros h3 {
+        font-size: 34px
+    }
+}

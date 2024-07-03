@@ -1,0 +1,229 @@
+/**
+ * @version     CVS: 1.0.0
+ * @package     com_acervosalesiano
+ * @copyright   2024 JosÃƒÆ’Ã‚Â© Carlos Ferreira
+ * @license     GNU General Public License versÃƒÆ’Ã‚Â£o 2 ou posterior; consulte o arquivo License. txt
+ * @author      JosÃƒÆ’Ã‚Â© Carlos Ferreira <jcarloswk@gmail.com>
+ */
+ .acervo-salesiano {
+   display:flex;
+   padding: 0 40px;
+}
+.acervo-salesiano .acervo-nav {
+   width: 40%;
+   padding-right: 80px;
+}
+.acervo-salesiano .acervo-nav.no-items {
+   padding-right: 0;
+}
+.acervo-salesiano .acervo-nav ul li {
+   display:block;
+   border-bottom: 1px solid #e9e9e9;
+}
+.acervo-salesiano .acervo-nav ul li:last-child {
+   border-bottom:none
+}
+.acervo-salesiano .acervo-nav ul li a {
+   color: var(--cinza-3);
+   display: flex;
+   justify-content: space-between;
+   padding: 16px 0;
+}
+.acervo-salesiano .acervo-nav ul li a:hover, .acervo-salesiano .acervo-nav ul li.active a {
+   font-weight:500
+}
+.acervo-salesiano .acervo-nav ul li a .tag-icon {
+   transition: ease all 0.3s
+}
+.acervo-salesiano .acervo-nav ul li a:hover .tag-icon,.acervo-salesiano .acervo-nav ul li.active a .tag-icon {
+   margin-right:-15px !important;
+}
+.acervo-salesiano .acervo-nav ul {
+   margin:0;
+   padding:0;
+}
+.acervo-content {
+   width: 70%
+}
+.acervo-content .acervo-santidade {
+   display:flex;
+   flex-direction:column;
+   width: 100%;
+}
+.acervo-santidade-info {
+   display:flex;
+   justify-content: stretch;
+   align-items: center;
+}
+.acervo-santidade-info.info-frases {
+   flex-direction:column;
+}
+.acervo-santidade-info.info-frases .santidade-info-img {
+   max-width: 100%;
+   width:100%;
+}
+.acervo-santidade-info.info-frases .santidade-info-img img {
+   width: 100%;
+   height: 360px;
+}
+.santidade-resumo {
+   margin-top: 30px;
+}
+.santidade-info-img {
+   max-width: 300px;
+   padding-right: 20px
+}
+.santidade-info-img img {
+   object-fit:cover;
+   border-radius:20px;
+   height: 260px
+}
+.santidade-info-datas {
+   display:flex;
+   flex-direction:column;
+}
+.santidade-info-datas span {
+   line-height: 30px
+}
+.acervo-santidade h3 {
+   text-align: center;
+   padding:5px;
+   border-radius: 24px;
+   background-color: #E4F1FB;
+   color: var(--footer-light-azul);
+   font-size: 22px;
+   margin-bottom: 25px;
+   font-weight: 400;
+}
+.acervo-escolha {
+   background: var(--cinza-8);
+   display:table;
+   margin:0 auto;
+   padding: 20px 80px;
+   border-radius:10px;
+   font-weight: 500;
+   text-align:center;
+   color: #9d9d9d;
+   letter-spacing: 0.8px;
+}
+
+/*info download*/
+.info-download {
+   display:flex;
+   flex-direction:column;
+   align-items:self-start;
+}
+.info-download {
+
+}
+.info-download .download-item a {
+   display:flex;
+   width:100%;
+   justify-content:space-between;
+   border: 1px solid var(--cinza-7);
+   margin-bottom: 20px;
+   align-items: center;
+}
+.info-download .download-item {
+   width: 100%;
+}
+.info-download .download-text {
+   padding: 10px;
+   color: var(--cinza-3);
+}
+.info-download .download-button{
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #ffffff;
+   margin: 1px;
+}
+.info-download {
+
+}
+
+.menu-acervo-mobile {
+   padding: 0px;
+}
+.menu-acervo-mobile .navAcervoItems {
+   display:flex;
+   justify-content:center;
+   flex-direction: column;
+}
+.menu-acervo-mobile .itemInicio {
+   text-align:center;
+   display:flex;
+   width: 100%;
+   justify-content: space-between;
+   /* color: var(--cinza-1); */
+   font-weight:600;
+   padding: 8px 20px;
+   position: relative;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   z-index: 1;
+   background: #fff;
+   transition:all 0.3s;
+   align-items: center;
+   cursor:pointer
+}
+.menu-acervo-mobile {
+      margin-top: -20px;
+      position:relative;
+      width: 100%;
+      margin-bottom: 20px;
+      display:none;
+   }
+   .menu-acervo-mobile .tag-icon {
+      display:none;
+   }
+   .navAcervoItems ul {
+     display:none;
+     /* position:absolute; */
+     background: var(--cinza-9);
+     width:100%;
+     padding: 20px 0;
+     margin-top: -6px;
+     padding-left: 0;
+   }
+
+.navAcervoItems ul li  {
+   display:block;
+}
+.navAcervoItems ul li a {
+   padding: 10px 20px;
+   display:flex;
+   color: var(--cinza-4);
+   transition: all 0.3s
+}
+.navAcervoItems ul li a:hover, .navAcervoItems ul li a.active {
+   font-weight: 500;
+}
+.itemInicio:hover, .menu-acervo-mobile .itemInicio.active {
+   /* background: var(--escolas-principal); */
+   color:#fff;
+}
+.menu-acervo-mobile .itemInicio i {
+   transition: all 0.3s
+}
+.menu-acervo-mobile .itemInicio.active i{
+   transform:rotate(-180deg);
+   transition:all 0.3s
+}
+@media screen and (max-width: 997px){
+   .acervo-salesiano {
+      flex-direction:column;
+      padding:0
+   }
+   .acervo-content {
+      width: 100%;
+   }
+   .acervo-nav {
+      display:none;
+   }
+   .menu-acervo-mobile {
+      display:block
+   }
+}

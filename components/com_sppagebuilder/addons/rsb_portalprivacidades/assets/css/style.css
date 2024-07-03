@@ -1,0 +1,101 @@
+.rsbSlideDiferencial {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
+.rsbSlideDiferencial .swiper-wrapper {}
+.rsb-diferencial-imagem {
+    display:flex;
+    justify-content:center;
+}
+.rsb-diferencial-imagem img {
+    width: 12vh;
+}
+.rsb-diferencial-nav {
+    transform: translate3d(0px,0,0) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 5px;
+}
+
+.rsb-diferencial-nav > span {
+    width: auto;
+    border-radius:0;
+    height: auto;
+    background-color: #fff;
+    color: var(--btn-azul) !important;
+    border-radius: 50px;
+    text-align: start;
+    padding: 12px 12px 12px 25px;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    justify-content: space-between;
+    min-width: 400px;
+    color:#fff;
+    opacity: 1;
+}
+.rsb-slide-diferencial {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    width: 100%;
+}
+.rsb-diferencial-content {
+    padding: 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.rsb-diferencial-content h4 {
+    font-size: 2.6vh
+}
+.rsb-diferencial-descricao {
+    text-align:justify;
+    line-height: 1.6rem;
+}
+.rsbSlideDiferencial .swiper-slide {
+    display:flex;
+    height: auto !important;
+    padding: 20px;
+}
+.rsb-diferencial-nav > span.swiper-pagination-bullet-active, .rsb-diferencial-nav > span.swiper-pagination-bullet:hover {
+    background:red;
+    color:#fff !important;
+    box-shadow: 0 0 1px 2px #fff;
+}
+
+@media screen and (max-width: 992px){
+    .rsbSlideDiferencial {
+       flex-direction: column;
+       padding-bottom: 40px;
+    }
+    .rsbSlideDiferencial .swiper-wrapper {
+        margin-bottom:-40px;
+    }
+    .rsb-diferencial-nav {
+       position: absolute;
+       display: flex;
+       flex-direction: row;
+       z-index: 99;
+    }
+    .rsb-diferencial-nav > span span {
+        display:none !important
+    }
+    .rsb-diferencial-nav > span {
+        font-size:0;
+        width: 10px;
+        height: 10px;
+        min-width: auto;
+        padding:0;
+    }
+    .rsb-diferencial-content {
+        padding: 40px 0
+    }
+    .rsbSlideDiferencial .swiper-slide {
+        padding:10px
+    }
+
+}

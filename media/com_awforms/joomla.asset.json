@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_awforms",
+  "version": "CVS: 1.0.0",
+  "license": "GNU General Public License versão 2 ou posterior; consulte o arquivo License. txt",
+  "assets": [
+    {
+      "name": "com_awforms.admin",
+      "type": "style",
+      "uri": "com_awforms/admin.css"
+    },
+    {
+      "name": "com_awforms.admin",
+      "type": "script",
+      "uri": "com_awforms/admin.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+        "name": "com_awforms.list",
+        "type": "style",
+        "uri": "com_awforms/list.css"
+    }
+  ]
+}

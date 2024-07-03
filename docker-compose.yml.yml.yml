@@ -1,0 +1,27 @@
+version: '3.1'
+services:
+  joomlaPortal:
+    image: joomla
+    restart: always
+    links:
+      - joomlaDb:mysql
+    ports:
+      - 8066:80
+    volumes:
+      - "./:/var/www/html"
+    environment:
+      JOOMLA_DB_HOST: joomlaDb
+      JOOMLA_DB_PASSWORD: 8ROKC61SKlv4
+
+  joomlaDb:
+    image: mysql:latest
+    ports:
+      - 3306
+    restart: always
+    volumes:
+      - "./data:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: 8ROKC61SKlv4
+
+
+  

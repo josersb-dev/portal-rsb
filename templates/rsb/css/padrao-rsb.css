@@ -1,0 +1,618 @@
+:root {
+    --session-space: 152px;
+    --btn-space: 56px;
+    --title-space: 54px;
+    --text-space: 24px;
+    --vermelho-rsb: #ff3300!important;
+    --azul-rsb: #333399!important;
+    --bg-navbar-sistemas: #BDDCF6;
+    --font-color-top-navbar: #011F61;
+    --font-color-sub-navbar: #fff;
+    --footer-light-azul: #3171C0;
+    --footer-dark-azul: #2B61AE;
+    --acervo-principal: #4348b1;
+    --contato-principal: #544494;
+    --btn-azul: #21438E;
+    --btn-azul-houver: #1b70c6;
+    --btn-busca: #f3f3f3;
+    --cinza-0: #262626;
+    --cinza-1: #434343;
+    --cinza-2: #555555;
+    --cinza-3: #707070;
+    --cinza-4: #7b7b7b;
+    --cinza-5: #9d9d9d;
+    --cinza-6: #c4c4c4;
+    --cinza-7: #d9d9d9;
+    --cinza-8: #f5f5f5;
+    --cinza-9: #fafafa;
+    --comunicacao-light-7: #fff3e1;
+    --comunicacao-light-6: #ffe0b6;
+    --comunicacao-light-5: #ffcd86;
+    --comunicacao-light-4: #ffb858;
+    --comunicacao-light-3: #fea837;
+    --comunicacao-light-2: #fe9a24;
+    --comunicacao-light-1: #f98e22;
+    --comunicacao-principal: #f37f1f;
+    --comunicacao-dark-1: #ec701d;
+    --comunicacao-dark-2: #e2571a;
+    --escolas-light-9: #e4f1fb;
+    --escolas-light-8: #bddcf6;
+    --escolas-light-7: #94c6f0;
+    --escolas-light-6: #6eb0e8;
+    --escolas-light-5: #53a0e4;
+    --escolas-light-4: #3e90e0;
+    --escolas-light-3: #3883d2;
+    --escolas-light-2: #3171c0;
+    --escolas-light-1: #2b61ae;
+    --escolas-principal: #21438e;
+    --escolas-dark-1: #011f61;
+    --escolas-dark-2: #001e60;
+    --es-light-4: #e1f4f1;
+    --es-light-3: #b4e3dc;
+    --es-light-2: #84d2c6;
+    --es-light-1: #52c0ae;
+    --es-principal: #2bb19d;
+    --es-dark-1: #07a28c;
+    --es-dark-2: #05957f;
+    --es-dark-3: #02846f;
+    --es-dark-4: #007460;
+    --es-dark-5: #005744;
+    --pastoral-light-7: #fefde7;
+    --pastoral-light-6: #fef9c3;
+    --pastoral-light-5: #fdf49b;
+    --pastoral-light-4: #fcf073;
+    --pastoral-light-3: #f9eb53;
+    --pastoral-light-2: #f7e631;
+    --pastoral-light-1: #f9d730;
+    --pastoral-principal: #f8bf27;
+    --pastoral-dark-1: #f6a71e;
+    --pastoral-dark-2: #f27e0d;
+    --social-light-6: #ffeaec;
+    --social-light-5: #ffcace;
+    --social-light-4: #f99591;
+    --social-light-3: #f16a65;
+    --social-light-2: #fb453c;
+    --social-light-1: #ff2e18;
+    --social-principal: #e63827;
+    --social-dark-1: #f31f1b;
+    --social-dark-2: #e10b16;
+    --social-dark-3: #d4000c;
+    --social-dark-4: #c70000;
+    --social-dark-5: #a60000
+}
+
+/* Definição das classes */
+.elemento {
+    width: var(--session-space);
+    height: var(--session-space);
+}
+
+.botao {
+    width: var(--btn-space);
+    height: var(--btn-space);
+}
+
+.titulo {
+    width: var(--title-space);
+    height: var(--title-space);
+}
+
+.texto {
+    width: var(--text-space);
+    height: var(--text-space);
+}
+
+.vermelho-rsb {
+    color: var(--vermelho-rsb);
+}
+
+.azul-rsb {
+    color: var(--azul-rsb);
+}
+
+.bg-navbar-sistemas {
+    background-color: var(--bg-navbar-sistemas);
+}
+
+.font-color-top-navbar {
+    color: var(--font-color-top-navbar);
+}
+
+.font-color-sub-navbar {
+    color: var(--font-color-sub-navbar);
+}
+
+.footer-light-azul {
+    color: var(--footer-light-azul);
+}
+
+.footer-dark-azul {
+    color: var(--footer-dark-azul);
+}
+
+.acervo-principal {
+    color: var(--acervo-principal);
+}
+
+.contato-principal {
+    color: var(--contato-principal);
+}
+
+.btn-azul {
+    background-color: var(--btn-azul);
+}
+
+.btn-azul:hover {
+    background-color: var(--btn-azul-houver);
+}
+
+.btn-busca {
+    background-color: var(--btn-busca);
+}
+
+.cinza-0 {
+    color: var(--cinza-0);
+}
+
+.cinza-1 {
+    color: var(--cinza-1);
+}
+
+.cinza-2 {
+    color: var(--cinza-2);
+}
+
+.cinza-3 {
+    color: var(--cinza-3);
+}
+
+.cinza-4 {
+    color: var(--cinza-4);
+}
+
+.cinza-5 {
+    color: var(--cinza-5);
+}
+
+.cinza-6 {
+    color: var(--cinza-6);
+}
+
+.cinza-7 {
+    color: var(--cinza-7);
+}
+
+.cinza-8 {
+    color: var(--cinza-8);
+}
+
+.cinza-9 {
+    color: var(--cinza-9);
+}
+
+/* Adicionando regras de cor e plano de fundo */
+.escolas-dark-3-background {
+    background-color: var(--escolas-dark-3);
+}
+
+.escolas-dark-3-color {
+    color: var(--escolas-dark-3);
+}
+
+.escolas-dark-2-background {
+    background-color: var(--escolas-dark-2);
+}
+
+.escolas-dark-2-color {
+    color: var(--escolas-dark-2);
+}
+
+.escolas-dark-1-background {
+    background-color: var(--escolas-dark-1);
+}
+
+.escolas-dark-1-color {
+    color: var(--escolas-dark-1);
+}
+
+.escolas-principal-background {
+    background-color: var(--escolas-principal);
+}
+
+.escolas-principal-color,.santos-as-principal-color {
+    color: var(--escolas-principal);
+}
+.escolas-principal-color-hover:hover,
+.escolas-principal-color-hover.active,
+.santos-as-principal-color-hover:hover,
+.santos-as-principal-color-hover.active {
+    color: var(--escolas-principal) !important;
+    border-color: var(--escolas-principal) !important;
+}
+.escolas-principal-background-hover:hover,.escolas-principal-background-hover.active {
+    background: var(--escolas-principal) !important;
+    border-color: var(--escolas-principal) !important;
+    color:#fff !important
+}
+
+.ensino-superior-principal-background-hover:hover,.ensino-superior-principal-background-hover.active {
+    background: var(--es-principal) !important;
+    border-color: var(--es-principal) !important;
+    color:#fff !important
+}
+
+.social-principal-background-hover:hover,.social-principal-background-hover.active {
+    background: var(--social-principal) !important;
+    border-color: var(--social-principal) !important;
+    color:#fff !important
+}
+.comunicacao-principal-background-hover:hover,.comunicacao-principal-background-hover.active {
+    background: var(--comunicacao-principal) !important;
+    border-color: var(--comunicacao-principal) !important;
+    color:#fff !important
+}
+.escolas-light-1-background {
+    background-color: var(--escolas-light-1);
+}
+
+.escolas-light-1-color {
+    color: var(--escolas-light-1);
+}
+
+.escolas-light-2-background {
+    background-color: var(--escolas-light-2);
+}
+
+.escolas-light-2-color {
+    color: var(--escolas-light-2);
+}
+
+.escolas-light-3-background {
+    background-color: var(--escolas-light-3);
+}
+
+.escolas-light-3-color {
+    color: var(--escolas-light-3);
+}
+
+.escolas-light-4-background {
+    background-color: var(--escolas-light-4);
+}
+
+.escolas-light-4-color {
+    color: var(--escolas-light-4);
+}
+
+.escolas-light-5-background {
+    background-color: var(--escolas-light-5);
+}
+
+.escolas-light-5-color {
+    color: var(--escolas-light-5);
+}
+
+.escolas-light-6-background {
+    background-color: var(--escolas-light-6);
+}
+
+.escolas-light-6-color {
+    color: var(--escolas-light-6);
+}
+
+.escolas-light-7-background {
+    background-color: var(--escolas-light-7);
+}
+
+.escolas-light-7-color {
+    color: var(--escolas-light-7);
+}
+
+.escolas-light-8-background {
+    background-color: var(--escolas-light-8);
+}
+
+.escolas-light-8-color {
+    color: var(--escolas-light-8);
+}
+
+.escolas-light-9-background {
+    background-color: var(--escolas-light-9);
+}
+
+.escolas-light-9-color {
+    color: var(--escolas-light-9);
+}
+
+.pastoral-dark-2-background {
+    background-color: var(--pastoral-dark-2);
+}
+
+.pastoral-dark-2-color {
+    color: var(--pastoral-dark-2);
+}
+
+.pastoral-dark-1-background {
+    background-color: var(--pastoral-dark-1);
+}
+
+.pastoral-dark-1-color {
+    color: var(--pastoral-dark-1);
+}
+
+.pastoral-principal-background {
+    background-color: var(--pastoral-principal);
+}
+
+.pastoral-principal-color {
+    color: var(--pastoral-principal);
+}
+.pastoral-principal-color-hover {
+    color: var(--pastoral-principal) !important;
+    border-color: var(--pastoral-principal) !important
+}
+
+.pastoral-light-1-background {
+    background-color: var(--pastoral-light-1);
+}
+
+.pastoral-light-1-color {
+    color: var(--pastoral-light-1);
+}
+
+.pastoral-light-2-background {
+    background-color: var(--pastoral-light-2);
+}
+
+.pastoral-light-2-color {
+    color: var(--pastoral-light-2);
+}
+
+.pastoral-light-3-background {
+    background-color: var(--pastoral-light-3);
+}
+
+.pastoral-light-3-color {
+    color: var(--pastoral-light-3);
+}
+
+.pastoral-light-4-background {
+    background-color: var(--pastoral-light-4);
+}
+
+.pastoral-light-4-color {
+    color: var(--pastoral-light-4);
+}
+
+.pastoral-light-5-background {
+    background-color: var(--pastoral-light-5);
+}
+
+.pastoral-light-5-color {
+    color: var(--pastoral-light-5);
+}
+
+.pastoral-light-6-background {
+    background-color: var(--pastoral-light-6);
+}
+
+.pastoral-light-6-color {
+    color: var(--pastoral-light-6);
+}
+
+.pastoral-light-7-background {
+    background-color: var(--pastoral-light-7);
+}
+
+.pastoral-light-7-color {
+    color: var(--pastoral-light-7);
+}
+
+.social-dark-2-background {
+    background-color: var(--social-dark-2);
+}
+
+.social-dark-2-color {
+    color: var(--social-dark-2);
+}
+
+.social-dark-1-background {
+    background-color: var(--social-dark-1);
+}
+
+.social-dark-1-color {
+    color: var(--social-dark-1);
+}
+
+.social-principal-background {
+    background-color: var(--social-principal);
+}
+
+.social-principal-color,.veneraveis-principal-color {
+    color: var(--social-principal);
+}
+.social-principal-color-hover:hover,
+.social-principal-color-hover.active,
+.veneraveis-principal-color-hover:hover,
+.veneraveis-color-hover.active {
+    color: var(--social-principal) !important;
+    border-color: var(--social-principal) !important
+}
+
+.social-light-1-background {
+    background-color: var(--social-light-1);
+}
+
+.social-light-1-color {
+    color: var(--social-light-1);
+}
+
+.social-light-2-background {
+    background-color: var(--social-light-2);
+}
+
+.social-light-2-color {
+    color: var(--social-light-2);
+}
+
+.social-light-3-background {
+    background-color: var(--social-light-3);
+}
+
+.social-light-3-color {
+    color: var(--social-light-3);
+}
+
+.social-light-4-background {
+    background-color: var(--social-light-4);
+}
+
+.social-light-4-color {
+    color: var(--social-light-4);
+}
+
+.social-light-5-background {
+    background-color: var(--social-light-5);
+}
+
+.social-light-5-color {
+    color: var(--social-light-5);
+}
+
+.social-light-6-background {
+    background-color: var(--social-light-6);
+}
+
+.social-light-6-color {
+    color: var(--social-light-6);
+}
+.es-dark-3-background {
+    background-color: var(--es-dark-3);
+}
+
+.es-dark-3-color {
+    color: var(--es-dark-3);
+}
+
+.es-dark-4-background {
+    background-color: var(--es-dark-4);
+}
+
+.es-dark-4-color {
+    color: var(--es-dark-4);
+}
+
+.es-dark-5-background {
+    background-color: var(--es-dark-5);
+}
+
+.es-dark-5-color {
+    color: var(--es-dark-5);
+}
+
+.es-light-1-background {
+    background-color: var(--es-light-1);
+}
+
+.es-light-1-color {
+    color: var(--es-light-1);
+}
+
+.es-light-2-background {
+    background-color: var(--es-light-2);
+}
+
+.es-light-2-color {
+    color: var(--es-light-2);
+}
+
+.es-light-3-background {
+    background-color: var(--es-light-3);
+}
+
+.es-light-3-color {
+    color: var(--es-light-3);
+}
+
+.es-light-4-background {
+    background-color: var(--es-light-4);
+}
+
+.es-light-4-color {
+    color: var(--es-light-4);
+}
+.ensino-superior-principal-color,.beatos-as-principal-color {
+    color: var(--es-principal);
+}
+.ensino-superior-principal-background {
+    background-color: var(--es-principal)
+}
+.ensino-superior-principal-color-hover:hover,.ensino-superior-principal-color-hover.active,.beatos-as-principal-color-hover:hover,.beatos-as-principal-color-hover.active {
+    color: var(--es-principal) !important;
+    border-color: var(--es-principal) !important;
+}
+.comunicacao-principal-color,
+.frases-principal-color {
+    color: var(--comunicacao-principal);
+}
+.comunicacao-principal-color-hover:hover,
+.comunicacao-principal-color-hover.active,
+.frases-principal-color-hover:hover,
+.frases-principal-color-hover.active {
+    color: var(--comunicacao-principal) !important;
+    border-color: var(--comunicacao-principal) !important;
+}
+
+.comunicacao-light-7-background {
+    background: var(--comunicacao-light-7);
+}
+.comunicacao-principal-background {
+    background-color: var(--comunicacao-principal)
+}
+.btn {
+    padding: 10px 30px !important;
+    border-radius: 40px !important;
+    text-transform: uppercase !important;
+    letter-spacing: .7px;
+    font-size: 14px !important;
+    transition: transform .2s, font-size .2s, letter-spacing .2s;
+    transition-timing-function: ease-in;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.btn:hover {
+    font-size: 16px;
+    letter-spacing: .8px;
+    transform: scale(1.1);
+    transition: all 0.2s
+}
+.btn-azul {
+    background-color: var(--btn-azul);
+    color: #fff
+}
+
+.btn-azul:hover {
+    background-color: var(--btn-azul-houver);
+    color: #fff
+}
+
+.btn-azul-outline {
+    background-color: none;
+    border: 1px solid var(--btn-azul) !important;
+    color: var(--btn-azul)!important
+}
+
+.btn-azul-outline:hover {
+    background-color: var(--btn-azul) !important;
+    color: #fff!important
+}
+
+.btn-branco-outline {
+    background-color: none;
+    border: 1px solid #fff;
+    color: #fff
+}
+
+.btn-branco-outline:hover {
+    background-color: #fff;
+    color: var(--btn-azul)
+}

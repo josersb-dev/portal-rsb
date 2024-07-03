@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:joomla.org"
+	xsi:schemaLocation="urn:joomla.org menu.xsd"
+	>
+		<menuitem
+			title="Mbbbbbbbbbbbbbbbbbbbbb"
+			type="component"
+			element="com_modules"
+			link="index.php?option=com_modules&amp;view=modules&amp;client_id=1"
+			quicktask="index.php?option=com_modules&amp;view=select&amp;client_id=1"
+			quicktask-title="COM_CONTENT_MENUS_NEW_ADMIN_MODULE"
+		/>
+	</menuitem>
+</menu>
+

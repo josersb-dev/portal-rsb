@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>Onde Estamos</name>
+	<author>Joomla! Project</author>
+	<creationDate>2005-07</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>3.0.0</version>
+	<description>Onde Estamos.</description>
+	<namespace path="src">Joomla\Module\Ondeestamos</namespace>
+	<files>
+		<filename module="mod_ondeestamos">mod_ondeestamos.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<help key="Site_Modules:_Ondeestamos_Display" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_ondeestamos/src/Form/field">
+				<field
+					name="coTipoPresenca"
+					type="CoTipo"
+					label="Tipo de Presença"
+					multiple="true"	
+				/>
+
+				<field
+					name="titleselect"
+					type="text"
+					label="Título do select Unidades"
+				/>
+				<field 
+					name="cor" 
+					type="text" 
+					default="var(--principal-escolas)" 
+					label="Cor tema" 
+					description=""
+					hint=""
+				/>
+			</fieldset>
+			<fieldset name="advanced">
+		
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					multiple="true"
+					layout="joomla.form.field.list-fancy-select"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
