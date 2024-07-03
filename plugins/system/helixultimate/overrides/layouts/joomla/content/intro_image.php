@@ -65,6 +65,7 @@ if (isset($attribs->helix_ultimate_image) && $attribs->helix_ultimate_image != '
 				$layoutAttr = [
 					'src' => $intro_image,
 					'alt' => empty($displayData->title) ? false : htmlspecialchars($displayData->title ?? "", ENT_COMPAT, 'UTF-8'),
+					'class' => 'rsb-lazy'
 				];
 				echo LayoutHelper::render('joomla.html.image', array_merge($layoutAttr, ['itemprop' => 'thumbnailUrl']));
 			}
